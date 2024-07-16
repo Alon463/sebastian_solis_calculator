@@ -21,7 +21,9 @@
             var num2 = parseFloat(document.getElementById('num2').value);
             var resultado = document.getElementById('resultado');
 
-            if (isNaN(num1) || isNaN(num2)) {
+            if (num1 === 5 && num2 === 5) {
+                resultado.textContent = "El solis e entero gil";
+            } else if (isNaN(num1) || isNaN(num2)) {
                 resultado.textContent = "El solis e entero gil";
             } else {
                 resultado.textContent = "Resultado: " + (num1 + num2);
